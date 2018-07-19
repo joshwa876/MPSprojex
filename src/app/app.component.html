@@ -1,0 +1,31 @@
+<md-toolbar color="#839192" class="toolbar proText">
+  <img src = '/assets/mslogo.jpg'>{{title}}
+  <span class="spacer"></span>
+
+ <!--  
+ 
+  <button md-button routerLink="/start">
+    <span>Home</span>
+    </button>
+    
+    <button md-button routerLink="/start">
+    <span>Bio</span>
+    </button>
+    
+    <button md-button routerLink="/manage">
+    <span>Services</span>
+  	</button>
+ 
+ 
+ -->
+
+</md-toolbar>
+
+ <div class="flex-container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutAlign.xs="start">
+  <div class="flex-item" fxFlex="10%" fxFlex.xs="0%"></div>
+  <div class="flex-item" fxFlex="80%" fxFlex.xs="100%">
+    <router-outlet></router-outlet>
+  </div>
+ <div class="flex-item" fxFlex="10%" fxFlex.xs="0%"></div> 
+</div> 
+
